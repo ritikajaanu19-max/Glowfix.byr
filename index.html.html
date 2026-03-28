@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glowfix.byr</title>
+<style>
+body {font-family: Arial; background:#fff8f5; margin:0;}
+header {text-align:center; padding:20px; background:#f7e7e1;}
+.banner {text-align:center; padding:15px; background:#ffd6d6; font-weight:bold;}
+.products {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:20px;}
+.card {background:white; padding:15px; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.1); text-align:center;}
+button {background:#ff8fa3; border:none; padding:10px; color:white; border-radius:8px; cursor:pointer;}
+footer {text-align:center; padding:20px; background:#f7e7e1;}
+</style>
+<script>
+function order(product){
+let phone="919999999999";
+let message="Hi! I want to order "+product+" from Glowfix.byr";
+window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(message));
+}
+</script>
+</head>
+<body>
+<header>
+<h1>✨ Glowfix.byr ✨</h1>
+<p>Handcrafted Natural Skincare</p>
+</header>
+
+<div class="banner">🎁 First Order Gets Freebies 🎁</div>
+
+<section class="products">
+<div class="card"><h3>Detan Soap</h3><p>Removes tan & dullness</p><button onclick="order('Detan Soap')">Order</button></div>
+<div class="card"><h3>Goat Milk Soap</h3><p>Brightens & smoothens skin</p><button onclick="order('Goat Milk Soap')">Order</button></div>
+<div class="card"><h3>Vitamin C Soap</h3><p>Boosts glow</p><button onclick="order('Vitamin C Soap')">Order</button></div>
+<div class="card"><h3>Body Polishing Balls</h3><p>Exfoliates skin</p><button onclick="order('Body Polishing Balls')">Order</button></div>
+<div class="card"><h3>Face Mask Premix</h3><p>Custom skincare</p><button onclick="order('Face Mask Premix')">Order</button></div>
+</section>
+
+<footer>
+<p>Order via WhatsApp</p>
+<p>Instagram: @glowfix.byr</p>
+</footer>
+</body>
+</html>
